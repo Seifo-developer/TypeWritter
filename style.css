@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --pink-clr-: crimson;
+
+    --padding-wrapper-: 0 3rem;
+
+    --padding-navbar-: 1rem 0;
+
+    --list-a-margin: 2rem;
+}
+
+.wrapper{
+    max-width: 1300px;
+    padding: var(--padding-wrapper-);
+    margin: 0 auto;
+}
+
+
+
+
+/* nav bar styling  */
+.landing-page nav{
+    background-color: transparent;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: var(--padding-navbar-);
+    font-family: Ubuntu, sans-serif;
+}
+.landing-page nav a{
+    color: #fff;
+    margin-left: var(--list-a-margin);
+    font-weight: 600;
+}
+
+.landing-page nav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-page .wrapper ul{
+    display: flex;
+}
+
+/* logo */
+.text-logo{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pink{
+    color: var(--pink-clr-);
+}
+
+/* middle styling  */
+
+.landing-page .content{
+    height: 100vh;
+    font-family: Ubuntu, sans-serif;
+}
+
+.landing-page .content .wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+
+.content .text-1{
+    font-size: 27px;
+    font-weight: 300;
+}
+.content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+}
+.content .text-3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* background image  */
+.landing-page .content .image{
+    position: absolute;
+    z-index: -1;
+    background-image: url(images/back-6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-page .content .image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* styling button */
+button{
+    border: none;
+    background: var(--pink-clr-);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.landing-page-button{
+    margin-top: 20px;
+    padding: .6rem 1.6rem;
+}
